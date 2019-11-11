@@ -1,0 +1,103 @@
+/* element selector in css */
+h4 {
+    color: red;
+}
+
+/* class selector in css */
+.title {
+    color: blue;
+}
+
+/* id selector in css */
+#subtitle {
+    color: green;
+}
+
+/* sudoselector for hover*/
+h1:hover {
+    color: yellow;
+}
+
+/* sudoselector first element of list will get this style */
+li:first-child {
+    color: brown;
+}
+
+/* sudoselector every element in list with index which is even will get this style */
+li:nth-child(2) {
+    color: steelblue;
+}
+
+/* sudoselector last element in list will get this style */
+li:last-child {
+    color: greenyellow;
+}
+
+/* sudoselector when only one element in a list */
+li:only-child {
+    color: burlywood;
+}
+
+/* sudoselector for a link when not clicked*/
+#google-link:link {
+    color: blue;
+}
+
+/* sudoselector for a link when already clicked */
+#google-link:visited {
+    color: red;
+}
+
+/* selector for an element here we are trying to get element which is preceded
+by h4 (beware this has to be an element which is right after the specified elemnent) */
+h4 + article {
+    color: green;
+}
+
+/* selector which is styling based on parent child relation (so we can style for 
+example all buttons that are children of the same element as a textarea) */
+textarea ~ button {
+    color: indianred;
+}
+
+/* child selector for all thead elements that are a children of table */
+table > thead {
+    color: blue;
+}
+
+/* descendant selector works like child selector but applies style for all elements
+that are children of provided parent so even if they are children nested list they
+will get the style*/
+table thead {
+    color: blue;
+}
+
+/* will apply style only for elements that have exacly this attribute */
+img[src="../../assets/img/img-2.png"] {
+    border: 10px solid yellow;
+}
+
+/* attirbute selectors selects elements based on specified attributes here we are 
+adding an border styling for all images which have src staring with ..assets/img/
+*/
+img[src^="../../assets/img"] {
+    border: 10px solid black;
+}
+
+/* adds style for all elements that have src ending with provided value */
+img[src$="img"] {
+    border: 10px solid blue;
+}
+
+/* if the img element contains anywhere in src this value then this style will be 
+applied */
+img[src*="img"] {
+    border: 10px solid black;
+}
+
+/* 
+CSS looks always like this (CSS general rule curly braces are declaration) 
+selector {
+    property:value;
+}
+*/

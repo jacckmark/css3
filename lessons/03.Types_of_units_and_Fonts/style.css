@@ -1,0 +1,52 @@
+/* absolute units styling here example with px and cm there are also inches, 
+millimeters, points, picas */
+#image_nr_2 {
+    height: 400px;
+    width: 10cm;
+}
+
+/* relative units styling here example with % and vw there are also vh, em, ex, 
+ch, rem, vmin, vmax */
+#image_nr_1 {
+    height: 25%;
+    width: 80vw;
+}
+
+#google-link {
+    /* text decoration adds underline, no decoration, striketrought or overline 
+    to element with class google-link */
+    text-decoration: none;
+    text-decoration: underline;
+    text-decoration: line-through;
+    text-decoration: overline;
+}
+
+#test-paragraph {
+    /* this will capitalize all words in our paragraph, there are also options for 
+    lowercase, upppercase and none for text-transform */
+    text-transform: capitalize;
+    /* this will align text, other options are left, right, justify and none */
+    text-align: center;
+    /* font styling like size, boldness (from 100 to 1000 but not all fonts are 
+    supporting it) and style (italic, none, oblique, normal etc.) */
+    font-size: 1.25em;
+    font-weight: 700;
+    font-style: italic;
+}
+
+#article {
+    /* font family decides about family of fonts you can use, there are: serif, 
+    sans-serif and monospaced*/
+    font-family: "Franklin Gothic Medium", Arial, sans-serif;
+    /* font family can contain: specific font, second font if the first is not 
+    available, and then use sans-serif (some sans-serif font will be added) font
+    (if you are writing font family and it has more than one word you have to 
+    use captions  */
+}
+
+#some-paragraph-with-external-font {
+    /* using font from google fonts (Tomorrow) and also adding font which will be
+    our fallback font if the request to google fails or the browser will not 
+    support this font */
+    font-family: "Tomorrow", sans-serif;
+}

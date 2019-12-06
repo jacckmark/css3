@@ -1,0 +1,15 @@
+#my-img1 {
+    /* with border we can add border size, style(solid, dotted etc.) and color */
+    border: 5px solid blueviolet;
+    /* adding margin (space between element container and other elements) and 
+    padding (space inside element container between element and border) for 
+    an image */
+    margin: 2vw;
+    /* one value will add padding/margin for all sides, but if we add 4 we can 
+    style all sides to different values (the order is: up,right,down and left 
+    clockwise) */
+    padding: 2vw 4vw 1vw 0.001vw;
+}
+
+#my-img2 {
+}

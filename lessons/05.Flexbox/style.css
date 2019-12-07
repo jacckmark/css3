@@ -1,0 +1,40 @@
+#image_nr_2 {
+    height: 400px;
+    width: 10cm;
+}
+
+#image_nr_1 {
+    height: 25%;
+    width: 80vw;
+}
+
+.flex-container {
+    height: 300px;
+    background-color: DodgerBlue;
+    /* setting element display to flex creates flex container */
+    display: flex;
+    /* this option will force elements in to one line, there are also options 
+    like: wrap, wrap-reverse */
+    flex-wrap: wrap;
+    /* this will force elements of flex container to be placed in row (so from 
+    top to bottom and so on), there are also options: column, column-reverse, row-
+    rewerse*/
+    flex-direction: row;
+    /* this is a setting witch tells how to space and align items inside row/column
+    so we can use flex-end, flex-start, center, space-between, space-around, space-evenly   */
+    justify-content: space-around;
+    /* moves elements in counter axis of flex direction so if we want to align 
+    items vertically and our flex-direction is set to row we can add this property,
+    there are also options like: flex-start, flex-end, center, baseline and stretch  */
+    align-items: flex-end;
+}
+
+/* this is styling of all flex elements */
+.flex-container > div {
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}

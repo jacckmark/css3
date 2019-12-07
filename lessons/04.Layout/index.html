@@ -1,101 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <link rel="stylesheet" type="text/css" href="style.css" />
-        <title>layout</title>
-    </head>
-    <body>
-        <h1 class="title">layout lesson</h1>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua.</p>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>layout</title>
+</head>
 
-<h4>About Me</h4>
+<body>
+    <h1 class="title">layout lesson</h1>
 
-<article>some article examplesome article examplesome article examplesome article 
-    examplesome article examplesome article examplesome article examplesome article 
-    examplesome article examplesome article examplesome article examplesome article 
-    examplesome article examplesome article examplesome article examplesome article 
-    examplesome article examplesome article examplesome article examplesome article 
-    examplesome article examplesome article examplesome article examplesome article 
-    examplesome article examplesome article examplesome article example</article>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.</p>
 
-<a href="http://www.google.com" id="google-link">click here to go to google</a>
+    <h4>About Me</h4>
+
+    <article>some article examplesome article examplesome article examplesome article
+        examplesome article examplesome article examplesome article examplesome article
+        examplesome article examplesome article examplesome article examplesome article
+        examplesome article examplesome article examplesome article examplesome article
+        examplesome article examplesome article examplesome article examplesome article
+        examplesome article examplesome article examplesome article examplesome article
+        examplesome article examplesome article examplesome article example</article>
+
+    <a href="http://www.google.com" id="google-link">click here to go to google</a>
 
 
-<!-- inline css style -->
-<img style="height:400px;" src="../../assets/img/img-1.png"  id="my-img1">
+    <img style="height:400px;" src="../../assets/img/img-1.png" id="my-img1">
 
-<p>Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. 
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat.
 
-Cillum dolore eu fugiat nulla , pariatur:
+        Cillum dolore eu fugiat nulla , pariatur:
 
-	<ul>
-		<li>Excepteur sint occaecat</li>
-		<li>cupidatat non proident</li>
-		<li>sunt in culpa.</li>
-    </ul>
-    
-    <ul>
-        <li>one element in a list</li>
-    </ul>
-</p>
+        <ul class="article-list">
+            <li>Excepteur sint occaecat</li>
+            <li>cupidatat non proident</li>
+            <li>sunt in culpa.</li>
+        </ul>
 
-<h2 id="subtitle">Services</h2>
+        <ul>
+            <li>one element in a list</li>
+        </ul>
+    </p>
+    <!-- 2 main display types of display are block (A block-level element always
+         starts on a new line and takes up the full width available (stretches 
+         out to the left and right as far as it can) example is a div which will 
+         take always whole line) and inline (An inline element does not start on 
+         a new line and only takes up as much width as necessary. Example is a 
+         span element which will take only as much space as necessary) -->
+    <div style="border: red solid;">block text</div>
+    <p>paragraph text<span style="border: blue solid;">inline span text</span>paragraph textx</p>
 
-<table border="1">
-	<thead>
-		<tr>
-			<td>Lorem</td>
-			<td>Ipsum</td>
-            <td>Dolor</td>
-            <td>Buttons</td>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Sit</td>
-			<td>Amet</td>
-            <td>Consectetur</td>
-            <td>
+    <h2 id="subtitle">Services</h2>
+
+    <table border="1" class="site-table">
+        <thead>
+            <tr>
+                <td>Lorem</td>
+                <td>Ipsum</td>
+                <td>Dolor</td>
+                <td>Buttons</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Sit</td>
+                <td>Amet</td>
+                <td>Consectetur</td>
+                <td>
                     <button>click me 1</button>
-            </td>
-		</tr>
-		<tr>
-			<td>Adipisicing</td>
-			<td>Elit</td>
-            <td>Sed</td>
-            <td>
+                </td>
+            </tr>
+            <tr>
+                <td>Adipisicing</td>
+                <td>Elit</td>
+                <td>Sed</td>
+                <td>
                     <button>click me 2</button>
-            </td>
-		</tr>
+                </td>
+            </tr>
 
-	</tbody>
-</table>
+        </tbody>
+    </table>
 
-<img src="../../assets/img/img-2.png" id="my-img2">
+    <img src="../../assets/img/img-2.png" id="my-img2">
 
 
-<h2>Contact Us</h2>
+    <h2>Contact Us</h2>
 
-<div id="service-image"></div>
+    <div id="service-image"></div>
 
-<div id="gradient-div"></div>
-<form>
-	<input type="text" placeholder="Full Name">
-	<input type="email" placeholder="Email">
-	<textarea></textarea>
-	<button>Submit</button>	
-</form>
-    </body>
+    <div id="gradient-div"></div>
+    <form>
+        <input type="text" placeholder="Full Name">
+        <input type="email" placeholder="Email">
+        <textarea></textarea>
+        <button>Submit</button>
+    </form>
+</body>
+
 </html>

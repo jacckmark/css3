@@ -5,15 +5,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <!-- we should add external fonts before our stylesheet because we would like
-        them to be ready to use when we are starting to run css -->
     <link href="https://fonts.googleapis.com/css?family=Tomorrow:300,400,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <title>types of units and fonts</title>
+    <title>flexbox</title>
 </head>
 
 <body>
-    <h1 class="title">types of units and fonts lesson</h1>
+    <h1 class="title">flexbox lesson</h1>
 
     <p id="test-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
@@ -116,6 +114,27 @@
         <textarea></textarea>
         <button>Submit</button>
     </form>
+    <br>
+
+    <div class="flex-container">
+        <!-- element 1 will take rest of available space in a row/column (depends
+            on flex direction) -->
+        <div style="order:8; flex-basis:100px; flex-grow:5;">1</div>
+        <div style="order:7; flex-basis:100px;">2</div>
+        <div style="order:6; flex-basis:100px;">3</div>
+        <!-- we can also apply align style to only one item which in this example
+            will force element to align in center of row/column of a flexbox 
+            container -->
+        <div style="order:5; flex-basis:100px; align-self: center;">4</div>
+        <div style="order:4; flex-basis:100px; align-self: flex-start;">5</div>
+        <!-- this defines how fast elements are shrinking in compare to other
+            flexbox elements -->
+        <div style="order:3; flex-basis:100px; flex-shrink:3;">6</div>
+        <div style="order:2; flex-basis:100px;">7</div>
+        <!-- example of flex property which takse grow, shrink and flex-basis -->
+        <div style="order:1; flex:1 1 100px">8</div>
+    </div>
+
 </body>
 
 </html>

@@ -13,107 +13,39 @@
 <body>
     <h1 class="title">grid lesson</h1>
 
-    <p id="test-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-        do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-        do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-        do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-        do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-        do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-        do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-        do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-        do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-        do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.</p>
-
-    <h4>About Me</h4>
-
-    <article id="article">some article examplesome article examplesome article examplesome article
-        examplesome article examplesome article examplesome article examplesome article
-        examplesome article examplesome article examplesome article examplesome article
-        examplesome article examplesome article examplesome article examplesome article
-        examplesome article examplesome article examplesome article examplesome article
-        examplesome article examplesome article examplesome article examplesome article
-        examplesome article examplesome article examplesome article example</article>
-
-    <a href="http://www.google.com" id="google-link">click here to go to google</a>
-
-
-    <img src="../../assets/img/img-1.png" id="image_nr_1">
-
-    <p id="some-paragraph-with-external-font">Duis aute irure dolor in reprehenderit in voluptate velit esse
-        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat.
-
-        Cillum dolore eu fugiat nulla , pariatur:
-
-        <ul>
-            <li>Excepteur sint occaecat</li>
-            <li>cupidatat non proident</li>
-            <li>sunt in culpa.</li>
-        </ul>
-
-        <ul>
-            <li>one element in a list</li>
-        </ul>
-    </p>
-
-    <h2 id="subtitle">Services</h2>
-
-    <table border="1">
-        <thead>
-            <tr>
-                <td>Lorem</td>
-                <td>Ipsum</td>
-                <td>Dolor</td>
-                <td>Buttons</td>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Sit</td>
-                <td>Amet</td>
-                <td>Consectetur</td>
-                <td>
-                    <button>click me 1</button>
-                </td>
-            </tr>
-            <tr>
-                <td>Adipisicing</td>
-                <td>Elit</td>
-                <td>Sed</td>
-                <td>
-                    <button>click me 2</button>
-                </td>
-            </tr>
-
-        </tbody>
-    </table>
-
-    <img src="../../assets/img/img-2.png" id="image_nr_2">
-
-
-    <h2>Contact Us</h2>
-
-    <form>
-        <input type="text" placeholder="Full Name">
-        <input type="email" placeholder="Email">
-        <textarea></textarea>
-        <button>Submit</button>
-    </form>
+    <br>
+    <h1>first grid container</h1>
+    <div class="grid-container-first">
+        <div class="grid-item-first" style="background: rgb(224, 41, 41)">1</div>
+        <div class="grid-item-first" style="background: rgb(29, 128, 29)">2</div>
+        <div class="grid-item-first" style="background: rgb(45, 45, 248)">3</div>
+        <div class="grid-item-first" style="background: rgb(138, 43, 226)">4</div>
+        <div class="grid-item-first" style="background: rgb(241, 167, 29)">5</div>
+    </div>
+    <br>
+    <h1>second grid container</h1>
+    <div class="grid-container-second">
+        <div class="grid-item-second" style="background: rgb(224, 41, 41)">1</div>
+        <div class="grid-item-second" style="background: rgb(29, 128, 29)">2</div>
+        <div class="grid-item-second" style="background: rgb(45, 45, 248)">3</div>
+        <div class="grid-item-second" style="background: rgb(138, 43, 226)">4</div>
+        <div class="grid-item-second" style="background: rgb(241, 167, 29)">5</div>
+    </div>
+    <h1>third grid container</h1>
+    <div class="grid-container-third">
+        <!-- properties grid-column and row-column are defining how much space should 
+        element take grid-column: 1/2 means that element will start from column 1
+        and take space to column 2 (column 2 included), grid-row works almost the
+        same but on rows -->
+        <div class="grid-item-third"
+            style="background: rgb(224, 41, 41); grid-column: 1 / span 2; grid-row: 1 / span 2;">1
+        </div>
+        <div class="grid-item-third" style="background: rgb(29, 128, 29)">2</div>
+        <div class="grid-item-third" style="background: rgb(45, 45, 248)">3</div>
+        <div class="grid-item-third" style="background: rgb(138, 43, 226)">4</div>
+        <div class="grid-item-third" style="background: rgb(241, 167, 29)">5</div>
+        <div class="grid-item-third" style="background: rgb(241, 29, 177)">6</div>
+    </div>
 </body>
 
 </html>

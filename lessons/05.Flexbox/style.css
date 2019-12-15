@@ -1,13 +1,3 @@
-#image_nr_2 {
-    height: 400px;
-    width: 10cm;
-}
-
-#image_nr_1 {
-    height: 25%;
-    width: 80vw;
-}
-
 .flex-container {
     height: 300px;
     background-color: DodgerBlue;

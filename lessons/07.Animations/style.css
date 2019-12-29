@@ -2,7 +2,89 @@
     height: 400px;
     width: 10cm;
 }
+
 #image_nr_1 {
     height: 25%;
     width: 80vw;
+}
+
+.submit-btn {
+    margin: 20px 10px;
+    padding: 10px 15px;
+    border: none;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+    background: rgb(89, 150, 255);
+    /* transition property takes element property (so the change we are listening 
+    for to apply our transition (there is also option all which will trigger 
+    transition on all changes, here the background change which will be triggered
+    by the hover sudoselector), time, style of transition (we have ease, linear, 
+    ease-in-out, ease-in, ease-out) and the delay time */
+    transition: background 2s ease-in-out 1s;
+    transition: padding 200ms linear;
+    /* this property transforms element (moves it 50px right and 30px down), with
+    transform property we can actually change element apperance not only move it
+    right or left*/
+    transform: translate(50px, 30px);
+}
+
+.submit-btn:hover {
+    background-color: rgb(255, 181, 147);
+    padding: 20px 30px;
+    /* will transform element (scale element 2 times up, rotate it 180 degrees)
+    on hover */
+    transform: scale(2) rotate(180deg);
+}
+
+.title {
+    /* using the defined keyframe on an element */
+    animation-name: red-to-blue-4-steps;
+    /* we have to add this property if we would like to use our keyframe because 
+    default duration is 0 and we won't be able to see a transformation at all */
+    animation-duration: 10s;
+    /* we have also like in transition the style of a change 
+    (animation-timing-function) */
+    animation-timing-function: linear;
+    /* delay of an animation */
+    animation-delay: 0s;
+    /* defines how many times the animation will be repeated (there is an option
+    infinite) */
+    animation-iteration-count: 2;
+    /* will define a way in which the animation will be played (here we would 
+    play it from start to finish and then from finish to start) */
+    animation-direction: reverse;
+    /* there is also an shorthand animation which is taking all properties in order:
+    animation-name, animation-duration, animation-timing-function, animation-delay,
+    animation-iteration-count, animation-direction */
+}
+
+/* keyframes gives us an option to specify transform with more than 2 steps, so
+we can apply more changes on our element and then apply them to the elements (realy
+helpfull when we are trying to define transform and reuse them more then one time */
+@keyframes red-to-blue-2-steps {
+    from {
+        background: red;
+    }
+    to {
+        background: blue;
+    }
+}
+
+@keyframes red-to-blue-4-steps {
+    0% {
+        background: red;
+    }
+    25% {
+        background: yellow;
+    }
+    75% {
+        background: green;
+        /* we can specify more than one change in a step of keyframe */
+        transform: translate(10px, 0px);
+    }
+    100% {
+        background: blue;
+    }
 }
